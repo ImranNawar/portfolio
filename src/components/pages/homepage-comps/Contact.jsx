@@ -10,7 +10,7 @@ const Contact = () => {
 
         const formData = new FormData(event.target);
 
-        axios.post('https://getform.io/f/feff19e5-27a9-4f74-be5d-9699c4b245ed', formData)
+        axios.post('https://getform.io/f/b0807d63-53bd-4208-82ce-c94470ac9b84', formData)
             .then(response => {
                 Swal.fire({
                     icon: 'success',
@@ -28,10 +28,8 @@ const Contact = () => {
             .catch(error => {
             console.log(error);
             });
-        
         event.target.reset();
     }
-    
 
     return (
         <section name='Contact' className='relative w-full md:h-screen p-4 text-white h-unset'>
