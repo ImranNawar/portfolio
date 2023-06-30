@@ -21,6 +21,7 @@
     "react-slick": "^0.29.0",
     "react-tsparticles": "^2.9.3",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^6.0.0",
     "sweetalert2": "^11.7.5",
     "tsparticles": "^2.9.3"
   },
