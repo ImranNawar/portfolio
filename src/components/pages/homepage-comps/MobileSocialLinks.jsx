@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiFiverr } from "react-icons/si";
 
 const MobileSocialLinks = () => {
 
@@ -29,13 +30,22 @@ const MobileSocialLinks = () => {
             id: 3,
             child: (
                 <>
+                    <SiFiverr size={20} /> Fiverr 
+                </>
+            ),
+            href: 'https://www.fiverr.com/imrannawar'
+        },
+        {
+            id: 4,
+            child: (
+                <>
                     <HiOutlineMail size={20} /> Mail
                 </>
             ),
             href: 'mailto:imran1nawar@gmail.com'
         },
         {
-            id: 4,
+            id: 5,
             child: (
                 <>
                     <BsFillPersonLinesFill size={20} /> Resume 
