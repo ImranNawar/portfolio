@@ -78,8 +78,6 @@ const NavbarVideos = () => {
                         </li>
                 ))}
             </ul> )}
-
-            
         </header>
     )
 }
