@@ -3,7 +3,7 @@ import html from "../../../assets/html.png"
 import css from "../../../assets/css.png"
 import javascript from "../../../assets/javascript.png"
 import react from "../../../assets/react.png"
-import bootstrap from "../../../assets/bootstrap.png"
+import tailwind from "../../../assets/tailwind.png"
 import git from "../../../assets/git.png"
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -36,8 +36,8 @@ const Techs = () => {
         },
         {
             id: 5,
-            src: bootstrap,
-            title: 'Bootstrap',
+            src: tailwind,
+            title: 'Tailwind CSS',
             style: 'shadow-white'
         },
         {

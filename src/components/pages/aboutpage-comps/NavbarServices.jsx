@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-scroll"
 import { NavLink } from 'react-router-dom'
 
-const NavbarVideos = () => {
+const NavbarServices = () => {
     
     const links = [
         {
@@ -12,7 +12,7 @@ const NavbarVideos = () => {
         },
         {
             id: 2,
-            link: "Edition"
+            link: "Services"
         }
         // {
         //     id: 3,
@@ -82,4 +82,4 @@ const NavbarVideos = () => {
     )
 }
 
-export default NavbarVideos
+export default NavbarServices

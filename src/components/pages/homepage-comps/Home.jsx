@@ -24,7 +24,10 @@ const Home = () => {
           <div className='flex flex-col justify-center items-center h-[85%] md:h-full order-2 md:order-1 md:items-start'>
             <h1 className='text-4xl md:text-6xl font-bold text-white mb-2 mt-3 md:mt-0 md:mb-4'>I'm Imran Nawar</h1>
             <h2 className='rounded-md bg-primary-color/20 max-w-max px-6 inline text-xl md:text-3xl lg:text-4xl font-semibold text-white'><Type /></h2>
-            <p className='text-gray-300 py-4 max-x-md text-justify'>certified by Coursera, one of the largest online professional education platforms. I recently completed the Meta Frontend Developer Professional Certificate, solidifying my expertise in the field. Welcome to my portfolio, I'm excited to share my journey with you!</p>
+            <p className='text-gray-300 py-4 max-x-md text-justify'>
+              A <span className='text-green-500'>Frontend Web Developer</span> passionate about creating interactive applications and experiences on the web. Welcome to my portfolio, I'm excited to share my journey with you!
+            </p>
+
 
             <div className='hidden desktop:flex'>
               <Link to='About' smooth duration={500} className='group text-black font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0'>
