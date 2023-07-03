@@ -3,8 +3,8 @@ import React from 'react';
 const Services = () => {
   return (
     <section name="Services" className='relative text-white p-4 mt-20 py-10 max-w-[1000px] mx-auto'>
-      <h2 className='text-4xl font-bold mb-4'>WHAT I DO?</h2>
-      <h2 className='text-4xl mb-4'>HERE ARE SOME OF MY EXPERTISE</h2>
+      <h2 className='text-4xl font-bold mb-4 text-green-500'>WHAT I DO?</h2>
+      <h2 className='text-3xl mb-4'>HERE ARE SOME OF MY EXPERTISE</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
         <div className='bg-gray-700 rounded-lg p-6 h-full shadow-md hover:scale-105 duration-500 py-2'>
           <h3 className='text-3xl font-semibold mb-4 text-green-500'>JavaScript Developer</h3>
