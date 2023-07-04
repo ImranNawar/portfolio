@@ -15,7 +15,7 @@ const About = () => {
                 </div>
 
                 <p className="mb-4 py-6">I'm a skilled Frontend Developer based in Peshawar, Pakistan. Currently pursuing my Computer Science degree at Islamia College University, Peshawar, I embarked on my web development journey during my second year of college.
-                I'm passionate about creating beautiful and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building frontend clones and side projects.</p>
+                I'm passionate about creating beautiful and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer.</p>
 
                 <Link to='/about-me' className='text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300'>
                     See more
