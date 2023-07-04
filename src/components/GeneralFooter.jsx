@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { HiOutlineMail } from "react-icons/hi";
 
 const GeneralFooter = () => {
     return (
@@ -13,8 +14,8 @@ const GeneralFooter = () => {
                     <i className='bx bxl-linkedin-square' ></i>
                 </a>
 
-                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="https://linktr.ee/imrannawar">
-                    <i className='bx bx-question-mark' ></i>
+                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="mailto:imran1nawar@gmail.com">
+                <HiOutlineMail size={37} />
                 </a>
             </div>
 
