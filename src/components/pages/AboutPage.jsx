@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import NavbarServices from '../pages/aboutpage-comps/NavbarServices'
 import AboutSectionAbout from '../pages/aboutpage-comps/AboutSectionAbout'
-import Services from '../pages/aboutpage-comps/Services'
+import Services from '../pages/aboutpage-comps/Services';
+import Github from './aboutpage-comps/Github';
 
 const AboutPage = () => {
 
@@ -13,7 +14,8 @@ const AboutPage = () => {
     return (
         <>
             <NavbarServices />
-            <AboutSectionAbout />
+            <AboutSectionAbout/>
+            <Github />
             <Services />
 
             <div className='relative flex justify-center'>
