@@ -60,7 +60,7 @@ const Navbar = () => {
 
             <ul className='hidden lg:flex'>
                 {links.map(({ id, link }) => (
-                    <li key={id} className='cursor-pointer hover:scale-105 rounded-lg hover:bg-primary-color p-4 duration-200 hover:text-black text-[1.1rem] lg:text-[1.3rem]'>
+                    <li key={id} className='cursor-pointer hover:scale-105 rounded-lg hover:bg-primary-color p-3 duration-200 hover:text-black text-[1.1rem] lg:text-[1.3rem]'>
                         <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                 ))}

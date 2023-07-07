@@ -15,7 +15,7 @@ const MyProjects = () => {
         {
             id: 1,
             src: restaurant,
-            demo: 'https://6498045c6963c4000802cb66--thunderous-faun-6dde52.netlify.app/',
+            demo: 'https://64a84418de3e4500089c094a--restaurant-imran.netlify.app/',
             code: 'https://github.com/ImranNawar/restaurant'
         },
         {
