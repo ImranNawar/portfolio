@@ -9,14 +9,16 @@ import CertificateSlider from './homepage-comps/CertificateSlider'
 
 const HomePage = () => {
     const certificates = [
+        {image: './images/certificates/Meta Front-End Developer.webp'},
         {image: '/images/certificates/HTML and CSS in Depth.webp'},
         {image: '/images/certificates/Javascript Basics.webp'},
-        {image: '/images/certificates/React Basics.webp'},
         {image: '/images/certificates/Principles of Javascript.webp'},
         {image: '/images/certificates/Introduction to Frontend Development.webp'},
+        {image: '/images/certificates/React Basics.webp'},
         {image: '/images/certificates/Getting started with Git.webp'},
         {image: '/images/certificates/Principles of UX UI Design.webp'},
         {image: '/images/certificates/Frontend Developer Capstone.webp'},
+        {image: '/images/certificates/Coding interview preparation.webp'},
         {image: '/images/certificates/Introduction to HTML.webp'},
         {image: '/images/certificates/Introduction to CSS.webp'},
         {image: '/images/certificates/Introduction to Javascript.webp'},
