@@ -36,7 +36,7 @@ const Contact = () => {
             <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
                 <div className='pb-8'>
                     <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl'>Contact</h2>
-                    <p className='py-6'>My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!</p>
+                    <p className='py-6'>My inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!</p>
                 </div>
 
                 <div className='flex justify-center items-center'>
