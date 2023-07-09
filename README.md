@@ -11,6 +11,7 @@ This is my portfolio. Here you can download my resume and check out all the rele
 - #### About
 - #### Projects
 - #### Technologies
+- #### Education
 - #### Contact
   
 
