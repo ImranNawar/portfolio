@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import restaurant from '/images/projectsImages/restaurant.webp'
-import islamiacollegepeshawar from '/images/projectsImages/islamia-college-peshawar.webp'
-import newswebsite from '/images/projectsImages/news-website.webp'
-import imagesearch from '/images/projectsImages/imagesearch.webp'
-import modernuiux from '/images/projectsImages/modern-ui-ux.webp'
+import restaurant from '/images/projectsImages/restaurant.webp';
+import islamiacollegepeshawar from '/images/projectsImages/islamia-college-peshawar.webp';
+import newswebsite from '/images/projectsImages/news-website.webp';
+import imagesearch from '/images/projectsImages/imagesearch.webp';
+import modernuiux from '/images/projectsImages/modern-ui-ux.webp';
 import todolist from '/images/projectsImages/todo-list.png';
-import hotel from '/images/projectsImages/hotel.webp'
+import hotel from '/images/projectsImages/Hotel.webp'
 import knowledgeresume from '/images/projectsImages/knowledge-resume.png'
 import userForm from '/images/projectsImages/userForm.webp'
 
