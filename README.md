@@ -1,36 +1,37 @@
-# Frontend Developer Portfolio - Imran Nawar
-This is my portfolio. Here you can download my resume and check out all the relevant information about the projects I've done and the technologies I work with.
+# Imran Nawar's portfolio - Computer Vision Researcher
 
-![Screanshot](./public/images/Screenshot1.png)
+Welcome to my portfolio! This repository showcases my professional journey as a Computer Vision Researcher. Here, you can download my resume and explore detailed information about my projects, technologies I work with, and more.
 
-![Screanshot](./public/images/Screenshot2.png)
+<!-- ![Screanshot](./public/images/Screenshot1.png) -->
 
-## Sections
+<!-- ![Screanshot](./public/images/Screenshot2.png) -->
 
-- #### Home
-- #### About
-- #### Projects
-- #### Technologies
-- #### Education
-- #### Contact
+## 🚀 Sections
+
+- Home
+- About
+- Experience
+- Projects
+- Technologies
+- Education
+- Contact
   
 
-## Technologies
+## 💻 Technologies Used
+This portfolio is built with:
 
-- #### React JS
-- #### Tailwind CSS
+- React JS
+- Tailwind CSS
 
-## Libraries
+### Libraries & Packages
+- react-router-dom
+- sweetalert2
+- axios
+- react-icons
+- react-scroll
+- tsparticles
+- react-github-calendar
 
-- #### react-router-dom
-- #### sweetalert2
-- #### axios
-- #### react-icons
-- #### react-scroll
-- #### tsparticles
-- #### react-github-calendar
-
-
-## License
+## 📝License
 
 This project is licensed under the [License](LICENSE).
