@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+instructions.txt
+public/images/certificates/archive/
+public/images/projectsImages/archive/
+public/images/archive
