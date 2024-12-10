@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "react-scroll"
 import { NavLink } from 'react-router-dom'
 
-const NavbarServices = () => {
+const NavbarExpertise = () => {
     
     const links = [
         {
@@ -12,7 +12,7 @@ const NavbarServices = () => {
         },
         {
             id: 2,
-            link: "Services"
+            link: "Expertise"
         }
         // {
         //     id: 3,
@@ -43,7 +43,7 @@ const NavbarServices = () => {
     }, [])
 
     return (
-        <header className={`fixed top-0 flex bg-neutral-900/60 justify-between h-20 items-center py-4 px-2 text-white mx-auto md:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-black/90' : ''}`}>
+        <header className={`fixed top-0 flex justify-between h-20 items-center py-4 px-2 text-white mx-auto md:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-gray-950/90' : 'bg-gray-950/50'}`}>
             <div className='flex flex-row gap-4 items-center'>
                 <NavLink to='/' className='text-[1.1rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500'>
                     <i className='bx bx-home-heart mr-2'></i>
@@ -82,4 +82,4 @@ const NavbarServices = () => {
     )
 }
 
-export default NavbarServices
+export default NavbarExpertise

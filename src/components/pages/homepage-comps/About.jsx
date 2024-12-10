@@ -14,8 +14,12 @@ const About = () => {
                     <h2 className='text-4xl sm:text-5xl font-bold inline border-b-4 border-primary-color/40'>About me</h2>
                 </div>
 
-                <p className="mb-4 py-6">I'm a skilled Frontend Developer based in Peshawar, Pakistan. Currently pursuing my Computer Science degree at Islamia College University, Peshawar, I embarked on my web development journey during my second year of college.
-                I'm passionate about creating beautiful and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer.</p>
+                <p className="mb-4 py-6">I'm an AI and Computer Vision Researcher from Peshawar, Pakistan. I received my Bachelor's degree
+                                    in Computer Science from Islamia College University, Peshawar. Currently, I am a
+                                    <span className='text-green-500'> Research Assistant</span> at the <span className='text-green-500'>Digital Image Processing Lab (DIP Lab) </span>
+                                    under the supervision of <span className='text-blue-500'><a href='https://scholar.google.com.pk/citations?user=E4-dElIAAAAJ&hl=en'>Dr. Muhammad Sajjad. </a></span>
+                                    My journey started with web development in college, and I have evolved into exploring cutting-edge topics in Artificial Intelligence,
+                                    with a strong focus on Scene Understanding and Autonomous Navigation.</p>
 
                 <Link to='/about-me' className='text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300'>
                     See more

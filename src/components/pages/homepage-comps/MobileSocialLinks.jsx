@@ -2,7 +2,8 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { SiFiverr } from "react-icons/si";
+import { SiGooglescholar } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const MobileSocialLinks = () => {
 
@@ -26,17 +27,17 @@ const MobileSocialLinks = () => {
             ),
             href: 'https://github.com/ImranNawar'
         },
+        // {
+        //     id: 3,
+        //     child: (
+        //         <>
+        //             Google Scholar <SiGooglescholar size={30} />
+        //         </>
+        //     ),
+        //     href: 'https://scholar.google.com/citations?user=MY_SCHOLAR_ID',
+        // },
         {
             id: 3,
-            child: (
-                <>
-                    <SiFiverr size={20} /> Fiverr 
-                </>
-            ),
-            href: 'https://www.fiverr.com/imrannawar'
-        },
-        {
-            id: 4,
             child: (
                 <>
                     <HiOutlineMail size={20} /> Mail
@@ -45,30 +46,49 @@ const MobileSocialLinks = () => {
             href: 'mailto:imran1nawar@gmail.com'
         },
         {
-            id: 5,
+            id: 4,
             child: (
                 <>
                     <BsFillPersonLinesFill size={20} /> Resume 
                 </>
             ),
-            href: '/Imran_Resume.pdf',
+            to: 'resume',
             style: 'rounded-br-md',
-            download: true
+            isRoute: true
         }
     ]
 
     return (
         <div className="flex mt-4 desktop:hidden">
             <ul className="flex gap-2 flex-wrap justify-center">
-                {
-                    links.map(({id, child, href, style, download}) => (
-                        <li key={id} className={"flex items-center gap-2 w-28 h-9 px-4 bg-gradient-to-t from-green-400/50 to-primary-color/50 rounded-md" + " " + style }>
-                            <a href={href} className="flex gap-3 items-center w-full text-white text-sm" download={download} target="_blank" rel="noreferrer">
-                            {child}
+                {links.map(({ id, child, href, to, style, isRoute }) => (
+                    <li
+                        key={id}
+                        className={
+                            "flex items-center gap-2 w-28 h-9 px-4 bg-gradient-to-t from-green-400/50 to-primary-color/50 rounded-md" +
+                            " " +
+                            style
+                        }
+                    >
+                        {isRoute ? (
+                            <Link
+                                to={to}
+                                className="flex gap-3 items-center w-full text-white text-sm"
+                            >
+                                {child}
+                            </Link>
+                        ) : (
+                            <a
+                                href={href}
+                                className="flex gap-3 items-center w-full text-white text-sm"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                {child}
                             </a>
-                        </li>
-                    ))
-                }
+                        )}
+                    </li>
+                ))}
             </ul>
         </div>
     );

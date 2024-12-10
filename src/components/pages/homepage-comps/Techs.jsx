@@ -5,6 +5,12 @@ import javascript from "../../../assets/javascript.png"
 import react from "../../../assets/react.png"
 import tailwind from "../../../assets/tailwind.png"
 import git from "../../../assets/git.png"
+import python from "../../../assets/python.png"
+import pytorch from "../../../assets/pytorch.svg"
+import opencv from "../../../assets/opencv.png"
+import cpp from "../../../assets/cpp.png"
+import scikitlearn from "../../../assets/scikitlearn.png"
+
 import { Link as ScrollLink } from 'react-scroll';
 
 const Techs = () => {
@@ -12,32 +18,32 @@ const Techs = () => {
     const techs = [
         {
             id: 1,
-            src: html,
-            title: 'HTML',
+            src: python,
+            title: 'PYTHON',
             style: 'shadow-orange-500'
         },
         {
             id: 2,
-            src: css,
-            title: 'CSS',
+            src: pytorch,
+            title: 'PYTORCH',
             style: 'shadow-blue-500'
         },
         {
             id: 3,
-            src: javascript,
-            title: 'JavaScript',
+            src: opencv,
+            title: 'OPENCV',
             style: 'shadow-yellow-500'
         },
         {
             id: 4,
-            src: react,
-            title: 'React',
+            src: cpp,
+            title: 'C++',
             style: 'shadow-blue-600'
         },
         {
             id: 5,
-            src: tailwind,
-            title: 'Tailwind CSS',
+            src: scikitlearn,
+            title: 'SCIKIT-LEARN',
             style: 'shadow-white'
         },
         {

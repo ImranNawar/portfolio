@@ -25,7 +25,7 @@ const Home = () => {
             <h1 className='text-4xl md:text-6xl font-bold text-white mb-2 mt-3 md:mt-0 md:mb-4'>I'm Imran Nawar</h1>
             <h2 className='rounded-md bg-primary-color/20 max-w-max px-6 inline text-xl md:text-3xl lg:text-4xl font-semibold text-white'><Type /></h2>
             <p className='text-gray-300 py-4 max-x-md text-justify'>
-              A <span className='text-green-500'>Frontend Web Developer</span> passionate about creating interactive applications and experiences on the web. Welcome to my portfolio, I'm excited to share my journey with you!
+              An <span className='text-green-500'>AI Researcher</span> passionate about advancing technology through innovative research in Computer Vision and AI. Welcome to my portfolio, where I share my journey in science and discovery.
             </p>
 
 

@@ -1,120 +1,158 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import restaurant from '/images/projectsImages/restaurant.webp';
-import islamiacollegepeshawar from '/images/projectsImages/islamia-college-peshawar.webp';
-import newswebsite from '/images/projectsImages/news-website.webp';
+import DIPCar from '/images/projectsImages/DIPCar.webp';
+import fer from '/images/projectsImages/fer.webp';
+import pneumonia_classifier from '/images/projectsImages/pneumonia-classifier.webp';
+import emotion_recognition from '/images/projectsImages/models_accuracy.webp';
+
+import cbir from '/images/projectsImages/block_diagram.webp';
+import youtubeV from '/images/projectsImages/youtubeV.webp';
 import imagesearch from '/images/projectsImages/imagesearch.webp';
-import modernuiux from '/images/projectsImages/modern-ui-ux.webp';
-import todolist from '/images/projectsImages/todo-list.png';
-import hotel from '/images/projectsImages/Hotel.webp'
-import knowledgeresume from '/images/projectsImages/knowledge-resume.png'
-import userForm from '/images/projectsImages/userForm.webp'
+import country_information from '/images/projectsImages/country-information.webp';
 
 const AllProjects = () => {
-
     const projects = [
         {
             id: 1,
-            src: restaurant,
-            demo: 'https://6498045c6963c4000802cb66--thunderous-faun-6dde52.netlify.app/',
-            code: 'https://github.com/ImranNawar/restaurant'
+            src: DIPCar,
+            description: 'Deep Learning Assisted Autonomous Navigation over Economical Hardware: Implemented a cost-effective autonomous driving system on NVIDIA Jetson Nano. Utilized SSD-MobileNet for object detection and FCN-ResNet34 for road segmentation.',
+            code: 'https://github.com/wajht7553/DIPCar',
         },
         {
             id: 2,
-            src: todolist,
-            demo: 'https://imrannawar.github.io/ToDoList.github.io/',
-            code: 'https://github.com/ImranNawar/ToDoList.github.io'
+            src: fer,
+            description: 'Developed a model using the FER-2013 dataset to classify emotions. Achieved optimal performance with CLIP ViT-B/32, balancing accuracy and speed for real-time applications.',
+            code: 'https://github.com/ImranNawar/facial-emotion-recognition',
         },
         {
             id: 3,
-            src: modernuiux,
-            demo: 'https://imrannawar.github.io/modern-ui-ux/',
-            code: 'https://github.com/ImranNawar/modern-ui-ux'
+            src: pneumonia_classifier,
+            description: 'Created a Streamlit app for pneumonia detection using ResNet18 with 80% test accuracy. Deployed on Hugging Face Spaces for real-world accessibility.',
+            demo: 'https://huggingface.co/spaces/imran-nawar/pneumonia-classifier',
+            code: 'https://github.com/ImranNawar/pneumonia-classifier',
         },
         {
             id: 4,
-            src: imagesearch,
-            demo: 'https://imrannawar.github.io/imagesearch/',
-            code: 'https://github.com/ImranNawar/imagesearch'
+            src: emotion_recognition,
+            description: 'Trained models to classify happy, sad, and surprise emotions using MediaPipe-extracted landmarks. Achieved 77.7% accuracy with Logistic Regression.',
+            code: 'https://github.com/ImranNawar/emotion-recognition',
         },
         {
             id: 5,
-            src: islamiacollegepeshawar,
-            demo: 'https://imrannawar.github.io/Islamia-College-Peshawar/',
-            code: 'https://github.com/ImranNawar/Islamia-College-Peshawar'
+            src: cbir,
+            description: 'Content Based Image Retrieval: Built a system using ORB features and FAISS indexing to retrieve similar images. Processed datasets of cars, cricket balls, and bats for accurate query matching.',
+            code: 'https://github.com/ImranNawar/CBIR',
         },
         {
             id: 6,
-            src: newswebsite,
-            demo: 'https://github.com/ImranNawar/web_small_projects/tree/main/NewsGrid%20Website',
-            code: 'https://github.com/ImranNawar/web_small_projects/tree/main/NewsGrid%20Website'
+            src: youtubeV,
+            description: 'Developed a Streamlit app to generate summaries of YouTube transcripts via Gemini API. Participated in the Gemini API Developer Competition.',
+            demo: 'https://youtubev-transcript-summarizer.streamlit.app/',
+            code: 'https://github.com/ImranNawar/youtubeV-transcript-summarizer',
         },
+        // {
+        //     id: 7,
+        //     description: 'RFID based Door Lock.',
+        //     code: 'https://github.com/wajht7553/RFID_based_door_lock',
+        // },
+        // {
+        //     id: 8,
+        //     description: 'ORB feature descriptor.',
+        //     code: 'https://github.com/ImranNawar/orb_feature_descriptor',
+        // },
         {
             id: 7,
-            src: hotel,
-            demo: 'https://github.com/ImranNawar/web_small_projects/tree/main/Hotel%20Website',
-            code: 'https://github.com/ImranNawar/web_small_projects/tree/main/Hotel%20Website'
+            src: imagesearch,
+            description: 'Image search: React app for searching images via Unsplash API.',
+            demo: 'https://imrannawar.github.io/imagesearch/',
+            code: 'https://github.com/ImranNawar/imagesearch',
         },
         {
             id: 8,
-            src: knowledgeresume,
-            demo: 'https://github.com/ImranNawar/web_small_projects/tree/main/Knowledge%20Resume',
-            code: 'https://github.com/ImranNawar/web_small_projects/tree/main/Knowledge%20Resume'
+            src: country_information,
+            description: 'Country Information: Get Country Information by Country Name.',
+            demo: 'https://country-information-gamma.vercel.app/',
+            code: 'https://github.com/ImranNawar/country-information',
         },
-        {
-            id: 9,
-            src: userForm,
-            demo: 'https://github.com/ImranNawar/web_small_projects/tree/main/User%20form',
-            code: 'https://github.com/ImranNawar/web_small_projects/tree/main/User%20form'
-        },
-    ]
+    ];
 
-    const handleClickDemo = (demoUrl) => {
-        const newWindow = window.open(demoUrl, '_blank');
+    const handleClick = (url) => {
+        const newWindow = window.open(url, '_blank');
         newWindow.opener = null;
         newWindow.rel = 'noopener noreferrer';
-    }
-
-    const handleClickCode = (codeUrl) => {
-        const newWindow = window.open(codeUrl, '_blank');
-        newWindow.opener = null;
-        newWindow.rel = 'noopener noreferrer';
-    }
-    
+    };
 
     return (
-        <section name="Projects" className='relative w-full text-white md:min-h-screen mt-24 mb-10'>
-        
-            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-                <div className='pb-8'>
-                    <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl'>Projects</h2>
-                    <p className='py-6'>Check out my best web applications here.</p>
+        <section
+            name="Projects"
+            className="relative w-full text-white min-h-screen h-unset pt-16"
+        >
+            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+                <div className="mb-4">
+                    <h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1">
+                        Projects
+                    </h2>
+                    <p className="py-6">Check out some of my work here</p>
                 </div>
 
-                <div  className='grid sm:grid-cols-2 md:grid-cols-3 gap-8'>
-                    {
-                        projects.map(({ id, src, demo, code }) => (
-                                <div key={id} className='shadow-md shadow-gray-600 rounded-lg max-w-md mx-auto'>
-                                    <img loading='lazy' src={src} alt="project card" className='rounded-md duration-200 hover:scale-105' />
-                                    <div className='flex items-center justify-center'>
-                                        <button onClick={() => handleClickDemo(demo)} className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-125'>Demo</button>
-                                        <button onClick={() => handleClickCode(code)} className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-125'>Code</button>
-                                    </div>
+                <div className="grid sm:grid-cols-2 gap-8 mb-6">
+                    {projects.map(({ id, src, description, demo, code }) => (
+                        <div
+                            key={id}
+                            className="shadow-md shadow-gray-600 rounded-lg max-w-md mx-auto"
+                        >
+                            {src ? (
+                                <img
+                                    src={src}
+                                    alt="project"
+                                    className="rounded-md duration-200 hover:scale-105"
+                                />
+                            ) : (
+                                <div className="p-4">
+                                    <h3 className="text-xl font-semibold mb-2">
+                                        {description.split(':')[0]}
+                                    </h3>
                                 </div>
-                        ))
-                    }
+                            )}
+                            <div className="p-4">
+                                <p className="text-sm text-gray-300 mb-2">
+                                    {description}
+                                </p>
+                                <div className="flex items-center justify-center">
+                                    {demo && (
+                                        <button
+                                            onClick={() => handleClick(demo)}
+                                            className="w-1/2 px-6 py-2 m-2 duration-200 hover:scale-125"
+                                        >
+                                            Live App
+                                        </button>
+                                    )}
+                                    <button
+                                        onClick={() => handleClick(code)}
+                                        className="w-1/2 px-6 py-2 m-2 duration-200 hover:scale-125"
+                                    >
+                                        GitHub Repository
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-
-            <div className='flex justify-center'>
-                <Link to='/' className='text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300'>
-                    <span className=''><i className='bx bx-home-heart mr-2'></i></span>
+            <div className="flex justify-center">
+                <Link
+                    to="/"
+                    className="text-black font-semibold text-[16px] w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 self-end mt-8 hover:scale-110 duration-300"
+                >
+                    <span className="">
+                        <i className="bx bx-home-heart mr-2"></i>
+                    </span>
                     Go back
                 </Link>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default AllProjects
+export default AllProjects;

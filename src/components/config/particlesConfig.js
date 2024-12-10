@@ -1,112 +1,92 @@
 const particlesConfig = {
     particles: {
         number: {
-        value: 70,
-        density: {
-            enable: true,
-            value_area: 800,
-        },
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 900,
+            },
         },
         color: {
-        value: "#0DFC4B",
+            value: ["#0fc4f2", "#ff6f61", "#6cff62"],
         },
         shape: {
-        type: "circle",
-        stroke: {
-            width: 0,
-            color: "#000000",
-        },
-        polygon: {
-            nb_sides: 5,
-        },
-        image: {
-            src: "img/github.svg",
-            width: 100,
-            height: 100,
-        },
+            type: ["circle", "triangle", "polygon"],
+            polygon: {
+                nb_sides: 6,
+            },
         },
         opacity: {
-        value: .5,
-        random: false,
-        anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-        },
+            value: 0.7,
+            random: true,
         },
         size: {
-        value: 3,
-        random: true,
-        anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false,
-        },
+            value: 4,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 2,
+                size_min: 0.5,
+            },
         },
         line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#0DFC4B",
-        opacity: 0.1,
-        width: 1,
+            enable: true,
+            distance: 120,
+            color: "#0fc4f2",
+            opacity: 0.3,
+            width: 1,
         },
         move: {
-        enable: true,
-        speed: 2,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        bounce: false,
-        attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-        },
+            enable: true,
+            speed: 1.5,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
         },
     },
     interactivity: {
-        detect_on: "canvas",
+        detect_on: "window",
         events: {
-        onhover: {
-            enable: true,
-            mode: "repulse",
-        },
-        onclick: {
-            enable: true,
-            mode: "push",
-        },
-        resize: true,
+            onhover: {
+                enable: true,
+                mode: ["grab", "bubble"],
+                parallax: {
+                    enable: true,
+                    force: 50,
+                    smooth: 10,
+                }
+            },
+            onclick: {
+                enable: true,
+                mode: "push",
+            },
+            resize: true,
         },
         modes: {
-        grab: {
-            distance: 400,
-            line_linked: {
-            opacity: 1,
+            grab: {
+                distance: 180,
+                line_linked: {
+                    opacity: 0.5,
+                }
             },
-        },
-        bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
-        },
-        repulse: {
-            distance: 100,
-            duration: 0.4,
-        },
-        push: {
-            particles_nb: 4,
-        },
-        remove: {
-            particles_nb: 2,
-        },
+            bubble: {
+                distance: 200,
+                size: 6,
+                duration: 0.3,
+                opacity: 0.8,
+                speed: 3,
+            },
+            push: {
+                particles_nb: 3,
+            },
         },
     },
     retina_detect: true,
+    background: {
+        color: "transparent",
+    },
+    fps_limit: 60,
 };
 
 export default particlesConfig;

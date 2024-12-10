@@ -10,7 +10,7 @@ const GeneralFooter = () => {
                     <i className='bx bxl-github' ></i>
                 </a>
 
-                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="https://www.linkedin.com/in/imran-nawar-a2a47a24a/">
+                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="https://www.linkedin.com/in/imran-nawar/">
                     <i className='bx bxl-linkedin-square' ></i>
                 </a>
 

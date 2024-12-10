@@ -15,18 +15,22 @@ const Navbar = () => {
         },
         {
             id: 3,
-            link: "Projects"
+            link: "Experience"
         },
         {
             id: 4,
-            link: 'Technologies'
+            link: "Projects"
         },
         {
             id: 5,
-            link: "Education"
+            link: 'Technologies'
         },
         {
             id: 6,
+            link: "Education"
+        },
+        {
+            id: 7,
             link: "Contact"
         }
     ]
@@ -50,11 +54,12 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`fixed top-0 flex bg-neutral-900/60 justify-between h-20 items-center py-4 px-4 md:px-6 text-white mx-auto lg:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-black/90' : ''}`}>
+        <header className={`fixed top-0 flex justify-between h-20 items-center py-4 px-4 md:px-6 text-white mx-auto lg:px-24 md:py-0 w-full z-30 transition-colors duration-700 ${isScrolled ? 'bg-gray-950/90' : 'bg-gray-950/50'}`}>
             <div className='flex flex-row gap-4 items-center'>
-                <h1 className='text-[1.1rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500'>
-                    <i className='bx bx-code-curly mr-2 text-base'></i>
+                <h1 className="text-[1.1rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-110 transition-all duration-500 flex items-center">
+                    <i className="bx bx-chip mr-2 text-base"></i>
                     Imran Nawar
+                    {/* <span className="ml-2 text-sm text-gray-400">Computer Vision Researcher</span> */}
                 </h1>
             </div>
 
