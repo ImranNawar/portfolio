@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import DIPCar from '/images/projectsImages/DIPCar.webp';
 import fer from '/images/projectsImages/fer.webp';
 import pneumonia_classifier from '/images/projectsImages/pneumonia-classifier.webp';
-import emotion_recognition from '/images/projectsImages/models_accuracy.webp';
+import fire_detection from '/images/projectsImages/fire-detection.webp';
 
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
@@ -24,16 +24,16 @@ const MyProjects = () => {
         },
         {
             id: 3,
+            src: fire_detection,
+            description: 'Developed a real-time fire detection system by fine-tuning YOLOv8n on a specialized dataset. Trained on a P100 GPU with 1004 training images, achieving optimal balance between speed and accuracy. Created a Python application for video inference to identify fires in real-time footage.',
+            code: 'https://github.com/ImranNawar/fire-detection',
+        },
+        {
+            id: 4,
             src: pneumonia_classifier,
             description: 'Created a Streamlit app for pneumonia detection using ResNet18 with 80% test accuracy. Deployed on Hugging Face Spaces for real-world accessibility.',
             demo: 'https://huggingface.co/spaces/imran-nawar/pneumonia-classifier',
             code: 'https://github.com/ImranNawar/pneumonia-classifier',
-        },
-        {
-            id: 4,
-            src: emotion_recognition,
-            description: 'Trained models to classify happy, sad, and surprise emotions using MediaPipe-extracted landmarks. Achieved 77.7% accuracy with Logistic Regression.',
-            code: 'https://github.com/ImranNawar/emotion-recognition',
         },
     ];
 
