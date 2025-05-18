@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import DIPCar from '/images/projectsImages/DIPCar.webp';
 import fer from '/images/projectsImages/fer.webp';
+import fire_detection from '/images/projectsImages/fire-detection.webp';
 import pneumonia_classifier from '/images/projectsImages/pneumonia-classifier.webp';
 import emotion_recognition from '/images/projectsImages/models_accuracy.webp';
 
@@ -27,25 +28,31 @@ const AllProjects = () => {
         },
         {
             id: 3,
+            src: fire_detection,
+            description: 'Developed a real-time fire detection system by fine-tuning YOLOv8n on a specialized dataset. Trained on a P100 GPU with 1004 training images, achieving optimal balance between speed and accuracy. Created a Python application for video inference to identify fires in real-time footage.',
+            code: 'https://github.com/ImranNawar/fire-detection',
+        },
+        {
+            id: 4,
             src: pneumonia_classifier,
             description: 'Created a Streamlit app for pneumonia detection using ResNet18 with 80% test accuracy. Deployed on Hugging Face Spaces for real-world accessibility.',
             demo: 'https://huggingface.co/spaces/imran-nawar/pneumonia-classifier',
             code: 'https://github.com/ImranNawar/pneumonia-classifier',
         },
         {
-            id: 4,
+            id: 5,
             src: emotion_recognition,
             description: 'Trained models to classify happy, sad, and surprise emotions using MediaPipe-extracted landmarks. Achieved 77.7% accuracy with Logistic Regression.',
             code: 'https://github.com/ImranNawar/emotion-recognition',
         },
         {
-            id: 5,
+            id: 6,
             src: cbir,
             description: 'Content Based Image Retrieval: Built a system using ORB features and FAISS indexing to retrieve similar images. Processed datasets of cars, cricket balls, and bats for accurate query matching.',
             code: 'https://github.com/ImranNawar/CBIR',
         },
         {
-            id: 6,
+            id: 7,
             src: youtubeV,
             description: 'Developed a Streamlit app to generate summaries of YouTube transcripts via Gemini API. Participated in the Gemini API Developer Competition.',
             demo: 'https://youtubev-transcript-summarizer.streamlit.app/',
@@ -62,14 +69,14 @@ const AllProjects = () => {
         //     code: 'https://github.com/ImranNawar/orb_feature_descriptor',
         // },
         {
-            id: 7,
+            id: 8,
             src: imagesearch,
             description: 'Image search: React app for searching images via Unsplash API.',
             demo: 'https://imrannawar.github.io/imagesearch/',
             code: 'https://github.com/ImranNawar/imagesearch',
         },
         {
-            id: 8,
+            id: 9,
             src: country_information,
             description: 'Country Information: Get Country Information by Country Name.',
             demo: 'https://country-information-gamma.vercel.app/',

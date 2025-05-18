@@ -29,6 +29,22 @@ const Experience = () => {
 
 
         <div className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl hover:scale-105 duration-500">
+          <h3 className="text-2xl font-bold text-green-400">Corvit Systems</h3>
+          <p className="text-lg text-gray-400">Jan 2025 - Mar 2025, May 2025 - Present</p>
+          <h4 className="text-xl font-semibold mt-2">Course Instructor</h4>
+          <p className="text-gray-300 mb-4">Islamabad, Pakistan</p>
+          <ul className="list-decimal list-inside space-y-2 text-gray-300">
+            <li>
+              Instructor for "Artificial Intelligence (Machine Learning & Deep Learning)" course in collaboration with the National Vocational & Technical Training Commission (NAVTTC) [Jan 2025 - Mar 2025]
+            </li>
+            <li>
+              Teaching "HCCDA-AI: Huawei Cloud Certified Developer Associate - Artificial Intelligence" certification course on weekends [May 2025 - Present]
+            </li>
+          </ul>
+        </div>
+
+
+        <div className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl hover:scale-105 duration-500">
           <h3 className="text-2xl font-bold text-green-400">Digital Image Processing Lab (DIP Lab)</h3>
           <p className="text-lg text-gray-400">Nov 2023 - June 2024</p>
           <h4 className="text-xl font-semibold mt-2">Undergraduate Student Researcher</h4>
