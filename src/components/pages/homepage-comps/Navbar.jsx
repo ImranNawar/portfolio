@@ -7,27 +7,27 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "Home"
+            link: "About_Me"
         },
         {
             id: 2,
-            link: "About"
-        },
-        {
-            id: 3,
             link: "Experience"
         },
         {
-            id: 4,
+            id: 3,
             link: "Projects"
         },
         {
-            id: 5,
+            id: 4,
             link: 'Technologies'
         },
         {
-            id: 6,
+            id: 5,
             link: "Education"
+        },
+        {
+            id: 6,
+            link: "Miscellaneous"
         },
         {
             id: 7,
@@ -65,7 +65,7 @@ const Navbar = () => {
 
             <ul className='hidden lg:flex'>
                 {links.map(({ id, link }) => (
-                    <li key={id} className='cursor-pointer hover:scale-105 rounded-lg hover:bg-primary-color p-3 duration-200 hover:text-black text-[1.1rem] lg:text-[1.3rem]'>
+                    <li key={id} className='cursor-pointer hover:scale-105 rounded-lg hover:bg-primary-color p-3 duration-200 hover:text-black text-[0.9rem] lg:text-[1.1rem]'>
                         <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                 ))}

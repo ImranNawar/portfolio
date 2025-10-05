@@ -1,6 +1,6 @@
 import ParticlesBackground from "./components/ParticlesBackground"
 import { Route, Routes } from "react-router-dom"
-import AboutPage from "./components/pages/AboutPage"
+import MiscellaneousPage from "./components/pages/MiscellaneousPage"
 import HomePage from "./components/pages/HomePage"
 import SocialLinks from "./components/SocialLinks"
 import GeneralFooter from "./components/GeneralFooter"
@@ -17,11 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 
-        <Route path="/about-me" element={<AboutPage />}/>
-
         <Route path="/projects" element={<AllProjectsPage />}/>
 
-        <Route path="/technologies" element={<AllTechsPage />}/>
+        {/* <Route path="/technologies" element={<AllTechsPage />}/> */}
+
+        <Route path="/miscellaneous" element={<MiscellaneousPage />}/>
 
         <Route path="/resume" element={<ResumePage />} />
       </Routes>

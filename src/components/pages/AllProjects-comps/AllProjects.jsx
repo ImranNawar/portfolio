@@ -55,7 +55,7 @@ const AllProjects = () => {
             id: 7,
             src: youtubeV,
             description: 'Developed a Streamlit app to generate summaries of YouTube transcripts via Gemini API. Participated in the Gemini API Developer Competition.',
-            demo: 'https://youtubev-transcript-summarizer.streamlit.app/',
+            // demo: 'https://youtubev-transcript-summarizer.streamlit.app/',
             code: 'https://github.com/ImranNawar/youtubeV-transcript-summarizer',
         },
         // {

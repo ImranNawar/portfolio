@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react'
 import Navbar from "./homepage-comps/Navbar"
-import Home from "./homepage-comps/Home"
-import About from "./homepage-comps/About"
+import About_Me from "./homepage-comps/About_Me"
 import Experience from "./homepage-comps/Experience"
 import MyProjects from "./homepage-comps/MyProjects"
 import Techs from "./homepage-comps/Techs"
 import Contact from "./homepage-comps/Contact"
 import CertificateSlider from './homepage-comps/CertificateSlider'
+import Miscellaneous from './homepage-comps/Miscellaneous'
 
 const HomePage = () => {
     const certificates = [
+        {image: '/images/certificates/Neural Networks and Deep Learning.webp'},
         {image: '/images/certificates/Machine Learning Specialization.webp'},
+        {image: '/images/certificates/Computer Vision Basics.webp'},
         {image: '/images/certificates/Fundamentals of Digital Image and Video Processing.webp'},
         {image: '/images/certificates/Supervised Machine Learning Regression and Classification.webp'},
         {image: '/images/certificates/Unsupervised Learning Recommenders Reinforcement Learning.webp'},
         {image: '/images/certificates/Advance Learning Algorithms.webp'},
+        {image: '/images/certificates/Mathematics for ML Linear_Algebra.webp'},
         {image: '/images/certificates/Matrix Algebra for Engineers.webp'},
         {image: '/images/certificates/Introduction to Statistics.webp'},
         {image: '/images/certificates/Python for Data Science AI and Development.webp'},
@@ -41,12 +44,12 @@ const HomePage = () => {
     return (
         <>
             <Navbar />
-            <Home />
-            <About />
+            <About_Me />
             <Experience />
             <MyProjects />
             <Techs />
             <CertificateSlider certificates={certificates} />
+            <Miscellaneous />
             <Contact />
         </>
     )
