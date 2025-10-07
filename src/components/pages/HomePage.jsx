@@ -24,7 +24,7 @@ const HomePage = () => {
         {image: '/images/certificates/Getting started with AI on Jetson Nano.webp'},
         {image: '/images/certificates/Introduction to Python.webp'},
         {image: '/images/certificates/Python (Basic).webp'},
-        {image: '/images/certificates/Introduction to C++.webp'},
+        {image: '/images/certificates/Introduction to CPP.webp'},
         {image: '/images/certificates/HTML and CSS in Depth.webp'},
         {image: '/images/certificates/Javascript Basics.webp'},
         {image: '/images/certificates/Principles of Javascript.webp'},

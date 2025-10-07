@@ -25,8 +25,7 @@ const About_Me = () => {
 
           <h2 className="text-3xl font-bold text-green-400">About Me</h2>
           <p className="text-gray-300 text-justify">
-            Hi there! I am a Research Assistant at the Digital Image Processing (DIP) Lab, Islamia College Peshawar.
-            I completed my BS in Computer Science at Islamia College Peshawar under the supervision of
+            Hi there! I am a Research Assistant at the Digital Image Processing (DIP) Lab, Islamia College Peshawar advised by 
             <a
               href="https://scholar.google.com.pk/citations?user=E4-dElIAAAAJ&hl=en"
               target="_blank"
@@ -34,16 +33,18 @@ const About_Me = () => {
               className="text-blue-400 underline ml-1"
             >
               Dr. Muhammad Sajjad
+            </a> and
+            <a
+              href="https://scholar.google.co.kr/citations?user=k5oUZyQAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline ml-1"
+            >
+              Dr. Khan Muhammad
             </a>.
+            Previously, I have worked with Corvit Networks Islamabad as an AI Instructor.
+            I completed my BS in Computer Science at Islamia College Peshawar in 2024.
           </p>
-
-          <h3 className="text-xl font-semibold text-green-400">Research Interests</h3>
-          <p className="text-gray-300 text-justify">
-            I am interested in developing multimodal vision-language models for video understanding,
-            with interests in video question answering and open-vocabulary recognition.
-            I am also passionate about applying AI in multidisciplinary domains to solve complex, real-world problems.
-          </p>
-
           <div className="flex space-x-6 mt-4">
             <img
               src="/images/logos/icp_logo.webp"
@@ -64,6 +65,15 @@ const About_Me = () => {
             {/* <p>I’m currently involved in 3 main projects: ----, ---, ---. Please feel free to contact at imran 1 nawar dot at gmail dot com for collaboration.</p> */}
             </div>
           </div>
+
+          <h3 className="text-xl font-semibold text-green-400">Research Interests</h3>
+          <p className="text-gray-300 text-justify">
+            I am working at the intersection of computer vision and deep learning. 
+            I am interested in developing multimodal vision-language models for video understanding,
+            with interests in video question answering and open-vocabulary recognition.
+            I am also passionate about applying AI in multidisciplinary domains to solve complex, real-world problems.
+          </p>
+
 
           <MobileSocialLinks />
         </div>

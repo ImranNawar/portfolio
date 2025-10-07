@@ -59,6 +59,12 @@ const Miscellaneous = () => {
       description: 'A cold December night at DIP Lab, working on converting my FYP work into a research paper',
       date: 'Dec 27, 2024',
     },
+    {
+      id: 3,
+      src: '/images/gallery/receiving_laptop.jpg',
+      description: 'Receiving laptop at Khyber Union Hall, Islamia College Peshawar.',
+      date: 'Feb 19, 2024',
+    },
 
   ];
 

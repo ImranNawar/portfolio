@@ -4,16 +4,9 @@ import React from 'react'
 const galleryItems = [
   { id: 1, src: '/images/gallery/DIPCar_poster_presentation.jpg', description: 'My respected teachers and honourable Vice Chancellor listening to my work at the poster presentation exhibition at the Department of Computer Science, Islamia College Peshawar', date: 'Aug 18, 2025' },
   { id: 2, src: '/images/gallery/dip_lab.jpg', description: 'A cold December night at DIP Lab, working on converting my FYP work into a research paper', date: 'Dec 27, 2024' },
-//   { id: 3, src: '/images/gallery/img3.jpg', description: 'Workshop on Autonomous Navigation', date: 'Oct 10, 2024' },
-//   { id: 4, src: '/images/gallery/img4.jpg', description: 'Panel Discussion on Future of AI', date: 'Nov 20, 2024' },
-//   { id: 5, src: '/images/gallery/img5.jpg', description: 'Research Presentation at AI Conference', date: 'Dec 02, 2024' },
-//   { id: 6, src: '/images/gallery/img6.jpg', description: 'Team Collaboration Session at DIP Lab', date: 'Jan 15, 2025' },
-//   { id: 7, src: '/images/gallery/img7.jpg', description: 'Field Visit for Dataset Collection', date: 'Feb 03, 2025' },
-//   { id: 8, src: '/images/gallery/img8.jpg', description: 'Student Workshop on Vision Models', date: 'Mar 18, 2025' },
-//   { id: 9, src: '/images/gallery/img9.jpg', description: 'Poster Session at Local Conference', date: 'Apr 09, 2025' },
-//   { id: 10, src: '/images/gallery/img10.jpg', description: 'Collaboration Meeting with Industry', date: 'May 22, 2025' },
-//   { id: 11, src: '/images/gallery/img11.jpg', description: 'Lab Demo Day', date: 'Jun 30, 2025' },
-//   { id: 12, src: '/images/gallery/img12.jpg', description: 'Project Handoff Presentation', date: 'Jul 12, 2025' },
+  { id: 3, src: '/images/gallery/receiving_laptop.jpg', description: 'Receiving laptop at Khyber Union Hall, Islamia College Peshawar', date: 'Feb 19, 2024'},
+  { id: 4, src: '/images/gallery/four_years_journey.jpg', description: 'The pens and markers that accompanied me through four years of my Bachelor\'s degree.', date: 'June 6, 2024'},
+
 ]
 
 const AllMiscellaneous = () => {
