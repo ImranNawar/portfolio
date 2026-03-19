@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Navbar from "./homepage-comps/Navbar"
 import About_Me from "./homepage-comps/About_Me"
 import Experience from "./homepage-comps/Experience"
+import Publications from "./homepage-comps/Publications"
 import MyProjects from "./homepage-comps/MyProjects"
-import Techs from "./homepage-comps/Techs"
 import Contact from "./homepage-comps/Contact"
 import CertificateSlider from './homepage-comps/CertificateSlider'
 import Miscellaneous from './homepage-comps/Miscellaneous'
@@ -46,8 +46,8 @@ const HomePage = () => {
             <Navbar />
             <About_Me />
             <Experience />
+            <Publications />
             <MyProjects />
-            <Techs />
             <CertificateSlider certificates={certificates} />
             <Miscellaneous />
             <Contact />

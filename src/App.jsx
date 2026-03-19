@@ -5,7 +5,6 @@ import HomePage from "./components/pages/HomePage"
 import SocialLinks from "./components/SocialLinks"
 import GeneralFooter from "./components/GeneralFooter"
 import AllProjectsPage from "./components/pages/AllProjectsPage"
-import AllTechsPage from "./components/pages/AllTechsPage"
 import ResumePage from "./components/pages/ResumePage"
 
 function App() {

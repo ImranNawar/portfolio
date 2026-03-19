@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiOutlineMail } from "react-icons/hi";
+import { SiGooglescholar } from "react-icons/si";
 
 const GeneralFooter = () => {
     return (
@@ -14,12 +15,16 @@ const GeneralFooter = () => {
                     <i className='bx bxl-linkedin-square' ></i>
                 </a>
 
+                <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="https://scholar.google.com/citations?user=UmMDyVAAAAAJ">
+                    <SiGooglescholar size={37} />
+                </a>
+
                 <a className='text-4xl hover:text-primary-color hover:animate-bounce' target='_blank' href="mailto:imran1nawar@gmail.com">
                 <HiOutlineMail size={37} />
                 </a>
             </div>
 
-            <p className='md:order-2'>• Copyright ©2025 | All rights reserved • </p>
+            <p className='md:order-2'>• Copyright ©2026 | All rights reserved • </p>
             <p>@ImranNawar</p>
         </footer>
     )

@@ -27,17 +27,17 @@ const SocialLinks = () => {
             ),
             href: 'https://github.com/ImranNawar'
         },
-        // {
-        //     id: 3,
-        //     child: (
-        //         <>
-        //             Google Scholar <SiGooglescholar size={30} />
-        //         </>
-        //     ),
-        //     href: 'https://scholar.google.com/citations?user=MY_SCHOLAR_ID',
-        // },
         {
             id: 3,
+            child: (
+                <>
+                    Google Scholar <SiGooglescholar size={30} />
+                </>
+            ),
+            href: 'https://scholar.google.com/citations?user=UmMDyVAAAAAJ',
+        },
+        {
+            id: 4,
             child: (
                 <>
                 Mail <HiOutlineMail size={30} />
@@ -46,7 +46,7 @@ const SocialLinks = () => {
             href: 'mailto:imran1nawar@gmail.com'
         },
         {
-            id: 4,
+            id: 5,
             child: (
                 <>
                 Resume <BsFillPersonLinesFill size={30} />

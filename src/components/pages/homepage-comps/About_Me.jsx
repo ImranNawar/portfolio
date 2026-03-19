@@ -69,9 +69,7 @@ const About_Me = () => {
           <h3 className="text-xl font-semibold text-green-400">Research Interests</h3>
           <p className="text-gray-300 text-justify">
             I am working at the intersection of computer vision and deep learning. 
-            I am interested in developing multimodal vision-language models for video understanding,
-            with interests in video question answering and open-vocabulary recognition.
-            I am also passionate about applying AI in multidisciplinary domains to solve complex, real-world problems.
+            I am passionate about applying AI in multidisciplinary domains to solve complex, real-world problems.
           </p>
 
 
