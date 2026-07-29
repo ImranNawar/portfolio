@@ -17,7 +17,7 @@ const Publications = () => {
             id: 2,
             title: "Democratizing Autonomous Driving Research via Economical Hardware",
             authors: "Imran Nawar, Wajahat Ullah, Muhammad Sajjad",
-            venue: "Springer IJIRA",
+            venue: "Int. J. of Vehicle Autonomous Systems (IJVAS)",
             year: "2026",
             status: "Under Review",
             statusStyle: "bg-yellow-500/20 border border-yellow-500"
@@ -121,7 +121,7 @@ const Publications = () => {
                             <h4 className='text-lg font-semibold text-gray-100 mb-1'>Dr. Maqsood Mahmud</h4>
                             <p className='text-sm text-gray-400 mb-2'>
                                 <span className='text-gray-500 font-semibold'>Affiliation: </span>
-                                Ulster University, Ireland
+                                Ulster University, Belfast, Nothern Ireland
                             </p>
                             <p className='text-xs text-gray-400'>
                                 <span className='text-gray-500 font-semibold'>Collaboration: </span>
