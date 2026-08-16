@@ -27,9 +27,10 @@ const Publications = () => {
     return (
         <section name='Publications' className='relative w-full md:min-h-screen h-unset'>
             <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
-
                 <div className='mb-8'>
-                    <h2 className='text-4xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-5xl'>Publications</h2>
+                    <h2 className='text-3xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-4xl'>
+                        Publications
+                    </h2>
                     <p className='py-6'>Research papers and publications</p>
                 </div>
 

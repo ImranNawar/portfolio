@@ -61,24 +61,27 @@ const CertificateSlider = ({ certificates }) => {
                     className="flex justify-between items-center cursor-pointer"
                     onClick={toggleDropdown}
                 >
-                    <h3 className="text-3xl font-bold text-green-400">{title}</h3>
+                    <h3 className="text-xl font-bold text-green-400">{title}</h3>
                     <i
                         className={`bx ${isOpen ? 'bx-chevron-up' : 'bx-chevron-down'
                             } text-xl text-primary-color`}
                     ></i>
                 </div>
-                <h4 className="text-xl mt-1 text-white">{subtitle}</h4>
-                {isOpen && <p className="text-lg mt-2">{description}</p>}
+                <h4 className="text-base mt-1 text-white">{subtitle}</h4>
+                {isOpen && <p className="text-gray-300 mt-2">{description}</p>}
             </div>
         );
     };
 
     return (
-        <section name="Education" className="relative w-full min-h-screen py-16 md:py-24 text-white">
+        <section name="Education" className="relative w-full min-h-screen py-12 md:py-16 text-white">
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
                 <div className="mb-2">
-                    <h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1">Education</h2>
-                    <div className="space-y-6 mt-4">
+                    <h2 className="text-3xl font-bold inline border-b-4 border-primary-color/40 sm:text-4xl pb-1">
+                        Education
+                    </h2>
+
+                    <div className="space-y-4 mt-4">
                         <Dropdown
                             title="Bachelor of Science in Computer Science"
                             subtitle="Islamia College University, Peshawar (2020-24)"
@@ -91,7 +94,10 @@ const CertificateSlider = ({ certificates }) => {
                             description="I completed my Higher Secondary education in Computer Science at Islamia College, Peshawar, a renowned institution in KPK and Pakistan."
                         />
                     </div>
-                    <p className="py-6 text-2xl">Check out some of my certificates</p>
+
+                    <p className="py-4 text-lg text-gray-300">
+                        Check out some of my certificates
+                    </p>
                 </div>
 
 

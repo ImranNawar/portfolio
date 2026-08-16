@@ -18,7 +18,7 @@ const careerItems = [
     logoBg: false,
   },
   {
-    date: 'Jan 2025 – Aug 2025',
+    date: 'Dec 2024 – Aug 2025',
     logo: '/images/logos/corvit_logo.webp',
     org: 'Corvit Networks',
     role: 'AI Instructor',

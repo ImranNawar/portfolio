@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Tasalli from '/images/projectsImages/tasalli.webp';
+import Talaash from '/images/projectsImages/talaash.webp';
 import DIPCar from '/images/projectsImages/DIPCar.webp';
 import fer from '/images/projectsImages/fer.webp';
 import fire_detection from '/images/projectsImages/fire-detection.webp';
@@ -16,43 +18,56 @@ const AllProjects = () => {
     const projects = [
         {
             id: 1,
+            src: Tasalli,
+            description: 'Tasalli is an AI companion chatbot that offers emotional support through natural, empathetic conversation.',
+            demo: 'https://tasalli.nativelyai.app/',
+            code: 'https://github.com/ImranNawar/tasalli',
+        },
+        {
+            id: 2,
+            src: Talaash,
+            description: 'Talaash is research group discovery platform that helps researchers find research groups that truly match their interests and goals.',
+            code: 'https://github.com/ImranNawar/talaash',
+        },
+        {
+            id: 3,
             src: DIPCar,
             description: 'Deep Learning Assisted Autonomous Navigation over Economical Hardware: Implemented a cost-effective autonomous driving system on NVIDIA Jetson Nano. Utilized SSD-MobileNet for object detection and FCN-ResNet34 for road segmentation.',
             code: 'https://github.com/wajht7553/DIPCar',
         },
         {
-            id: 2,
+            id: 4,
             src: fer,
             description: 'Developed a model using the FER-2013 dataset to classify emotions. Achieved optimal performance with CLIP ViT-B/32, balancing accuracy and speed for real-time applications.',
             code: 'https://github.com/ImranNawar/facial-emotion-recognition',
         },
         {
-            id: 3,
+            id: 5,
             src: fire_detection,
             description: 'Developed a real-time fire detection system by fine-tuning YOLOv8n on a specialized dataset. Trained on a P100 GPU with 1004 training images, achieving optimal balance between speed and accuracy. Created a Python application for video inference to identify fires in real-time footage.',
             code: 'https://github.com/ImranNawar/fire-detection',
         },
         {
-            id: 4,
+            id: 6,
             src: pneumonia_classifier,
             description: 'Created a Streamlit app for pneumonia detection using ResNet18 with 80% test accuracy. Deployed on Hugging Face Spaces for real-world accessibility.',
             demo: 'https://huggingface.co/spaces/imran-nawar/pneumonia-classifier',
             code: 'https://github.com/ImranNawar/pneumonia-classifier',
         },
         {
-            id: 5,
+            id: 7,
             src: emotion_recognition,
             description: 'Trained models to classify happy, sad, and surprise emotions using MediaPipe-extracted landmarks. Achieved 77.7% accuracy with Logistic Regression.',
             code: 'https://github.com/ImranNawar/emotion-recognition',
         },
         {
-            id: 6,
+            id: 8,
             src: cbir,
             description: 'Content Based Image Retrieval: Built a system using ORB features and FAISS indexing to retrieve similar images. Processed datasets of cars, cricket balls, and bats for accurate query matching.',
             code: 'https://github.com/ImranNawar/CBIR',
         },
         {
-            id: 7,
+            id: 9,
             src: youtubeV,
             description: 'Developed a Streamlit app to generate summaries of YouTube transcripts via Gemini API. Participated in the Gemini API Developer Competition.',
             // demo: 'https://youtubev-transcript-summarizer.streamlit.app/',
@@ -69,14 +84,14 @@ const AllProjects = () => {
         //     code: 'https://github.com/ImranNawar/orb_feature_descriptor',
         // },
         {
-            id: 8,
+            id: 10,
             src: imagesearch,
             description: 'Image search: React app for searching images via Unsplash API.',
             demo: 'https://imrannawar.github.io/imagesearch/',
             code: 'https://github.com/ImranNawar/imagesearch',
         },
         {
-            id: 9,
+            id: 11,
             src: country_information,
             description: 'Country Information: Get Country Information by Country Name.',
             demo: 'https://country-information-gamma.vercel.app/',

@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 import DIPCar from '/images/projectsImages/DIPCar.webp';
 import fer from '/images/projectsImages/fer.webp';
-import pneumonia_classifier from '/images/projectsImages/pneumonia-classifier.webp';
+import Tasalli from '/images/projectsImages/tasalli.webp';
+// import pneumonia_classifier from '/images/projectsImages/pneumonia-classifier.webp';
 import fire_detection from '/images/projectsImages/fire-detection.webp';
 
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 const MyProjects = () => {
     const projects = [
+        
         {
             id: 1,
             src: DIPCar,
@@ -24,16 +26,16 @@ const MyProjects = () => {
         },
         {
             id: 3,
-            src: fire_detection,
-            description: 'Developed a real-time fire detection system by fine-tuning YOLOv8n on a specialized dataset. Trained on a P100 GPU with 1004 training images, achieving optimal balance between speed and accuracy. Created a Python application for video inference to identify fires in real-time footage.',
-            code: 'https://github.com/ImranNawar/fire-detection',
+            src: Tasalli,
+            description: 'Tasalli is an AI companion chatbot that offers emotional support through natural, empathetic conversation.',
+            demo: 'https://tasalli.nativelyai.app/',
+            code: 'https://github.com/ImranNawar/tasalli',
         },
         {
             id: 4,
-            src: pneumonia_classifier,
-            description: 'Created a Streamlit app for pneumonia detection using ResNet18 with 80% test accuracy. Deployed on Hugging Face Spaces for real-world accessibility.',
-            demo: 'https://huggingface.co/spaces/imran-nawar/pneumonia-classifier',
-            code: 'https://github.com/ImranNawar/pneumonia-classifier',
+            src: fire_detection,
+            description: 'Developed a real-time fire detection system by fine-tuning YOLOv8n on a specialized dataset. Trained on a P100 GPU with 1004 training images, achieving optimal balance between speed and accuracy. Created a Python application for video inference to identify fires in real-time footage.',
+            code: 'https://github.com/ImranNawar/fire-detection',
         },
     ];
 
@@ -46,8 +48,10 @@ const MyProjects = () => {
     return (
         <section name="Projects" className='relative w-full text-white min-h-screen h-unset'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-                <div className='mb-4'>
-                    <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1'>Projects</h2>
+                <div className='mb-8'>
+                    <h2 className='text-3xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-4xl'>
+                        Projects
+                    </h2>
                     <p className='py-6'>Check out some of my work here</p>
                 </div>
 

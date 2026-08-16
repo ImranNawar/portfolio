@@ -74,12 +74,11 @@ const Miscellaneous = () => {
       className="relative w-full md:h-screen text-white h-unset"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-lg">
-        {/* Title */}
-        <div className="pb-8">
-          <h2 className="text-4xl sm:text-5xl font-bold inline border-b-4 border-primary-color/40">
-            Miscellaneous
+        <div className='mb-8'>
+          <h2 className='text-3xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-4xl'>
+              Miscellaneous
           </h2>
-        </div>
+      </div>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
